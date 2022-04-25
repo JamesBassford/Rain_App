@@ -14,10 +14,10 @@ st.set_page_config(layout="wide")
 st.title('Rainfall Analysis Dashboard')
 
 #files
-hist_p25 = xr.open_dataset('25km/hist/p25/hist_p25_av.nc')
-hist_cp4 = xr.open_dataset('25km/hist/cp4/hist_cp4_av.nc')
-fc_p25 = xr.open_dataset('25km/rcp85/p25/fc_p25_av.nc')
-fc_cp4 = xr.open_dataset('25km/rcp85/cp4/fc_cp4_av.nc')
+hist_p25 = xr.open_dataset('hist_p25_av.nc')
+hist_cp4 = xr.open_dataset('hist_cp4_av.nc')
+fc_p25 = xr.open_dataset('fc_p25_av.nc')
+fc_cp4 = xr.open_dataset('fc_cp4_av.nc')
 
 #convert to mm per day
 hist_p25 = hist_p25*86400
